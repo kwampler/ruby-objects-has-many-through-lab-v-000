@@ -20,7 +20,7 @@ class Artist
   def new_song(name, genre)
     @songs << self
     @genre << self
-    appointment.patient = self
+    song.artist = self
   end
 
   def genres
