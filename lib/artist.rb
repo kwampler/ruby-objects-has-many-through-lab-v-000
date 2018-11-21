@@ -23,8 +23,8 @@ class Artist
   end
 
    def genres
-    songs.all.select do |song|
-      artist.genre== self
+     self.songs.collect do |song|    #=> classes talk to each other
+      song.genre
     end
   end
 end
