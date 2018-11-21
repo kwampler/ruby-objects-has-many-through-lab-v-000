@@ -22,9 +22,9 @@ class Artist
     song.artist = self
   end
 
-  def genres
-    self.songs.collect do |song|
-    song.genre
+   def genres
+    songs.all.select do |song|
+      artist.genre== self
     end
   end
 end
