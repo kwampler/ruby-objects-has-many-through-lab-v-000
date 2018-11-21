@@ -22,7 +22,6 @@ class Artist
   end
     #@songs << self
    # @songs.artist = self
-  end
 
   def genres
     self.songs.collect do |song|
