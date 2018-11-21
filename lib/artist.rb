@@ -8,6 +8,9 @@ class Artist
     @name = name
     @@all << self
   end
+  def self.all
+    @@all
+  end
   def songs
     self.songs.collect do |song|    #=> classes talk to each other
     song.artist
