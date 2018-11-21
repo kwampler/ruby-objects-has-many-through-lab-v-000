@@ -18,7 +18,7 @@ class Artist
   end
 
   def new_song(name, genre)
-    @songs << self
+    @songs << song
     @songs.artist = self
   end
 
