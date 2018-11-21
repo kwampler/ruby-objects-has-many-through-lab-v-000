@@ -12,7 +12,9 @@ class Artist
   end
   
   def songs
-    @songs
+    self.songs.collect do |song|    #=> classes talk to each other
+    song.artist
+    end
   end
 
   def new_song(name)
