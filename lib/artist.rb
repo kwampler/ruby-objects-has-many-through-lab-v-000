@@ -20,9 +20,8 @@ class Artist
   def new_song(name, genre)
     @songs << self
     @genre << self
+    appointment.patient = self
   end
-    #@songs << self
-   # @songs.artist = self
 
   def genres
     self.songs.collect do |song|
