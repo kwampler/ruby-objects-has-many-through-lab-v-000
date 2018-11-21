@@ -17,7 +17,7 @@ class Artist
     end
   end
 
-  def new_song(name)
+  def new_song(name, genre)
     genre.new(name)
   end
     #@songs << self
