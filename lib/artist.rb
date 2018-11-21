@@ -6,7 +6,7 @@ class Artist
   def initialize(name)
     @songs = []
     @name = name
-    @all = all
+    @@all << self
   end
   def songs
     self.songs.collect do |song|    #=> classes talk to each other
